@@ -1,5 +1,26 @@
 # Nell
 
+## Table of contents
+
+- [Nell](#nell)
+  - [Table of contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Installing Nell](#installing-nell)
+  - [Getting started](#getting-started)
+    - [Input variables](#input-variables)
+    - [The circuit logic](#the-circuit-logic)
+    - [Output variables](#output-variables)
+  - [Example](#example)
+  - [Gate types and commands](#gate-types-and-commands)
+    - [input](#input)
+    - [show](#show)
+    - [signal](#signal)
+    - [AND](#and)
+    - [NOT](#not)
+    - [OR](#or)
+    - [NAND](#nand)
+    - [XOR](#xor)
+
 ## Introduction
 
 Nell is an interpreted language that describes simple circuits using logic gates like AND, OR, NOT, ...
