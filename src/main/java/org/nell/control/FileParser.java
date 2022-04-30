@@ -33,6 +33,11 @@ public class FileParser
                 String line = scanner.nextLine();
                 boolean hasCharacters = false;
 
+                if (line.startsWith("#"))
+                {
+                    continue;
+                }
+
                 for (char ch : line.toCharArray())
                 {
                     int code = ch;

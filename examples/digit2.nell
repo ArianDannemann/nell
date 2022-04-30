@@ -1,0 +1,25 @@
+# unsere inputs
+input L
+input M
+input S
+# invertierte optionen der inputs
+not L = nL
+not M = nM
+not S = nS
+
+# große und kleine geschwindigkeit bei der fahrt
+and L,nM,nS = G
+and L,M,nS = K
+
+# notbremse
+placeholder F
+or S,F = N
+
+# die beiden fälle die in einem fehler resultieren können
+and nL,M = f1
+and nM,S = f2
+# ob ein fehler ausgelöst wird
+or f1,f2 = F
+
+# welche variablen angezeigt werden sollen
+show G,K,N,F

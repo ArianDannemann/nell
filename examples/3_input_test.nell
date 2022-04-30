@@ -1,0 +1,10 @@
+input a
+input b
+input c
+
+and a,b,c = AND
+or a,b,c = OR
+nand a,b,c = NAND
+xor a,b,c = XOR
+
+show AND,OR,NAND,XOR

@@ -26,6 +26,7 @@ public class Interpreter
         gateManager = new GateManager();
         Interpreter.currentLine = "";
         Interpreter.inputCount = 0;
+        boolean cantAddInput = false;
 
         for (String command : commands)
         {
@@ -36,9 +37,19 @@ public class Interpreter
 
             Interpreter.currentLine = command;
 
+            if (!arguments[0].equals("input"))
+            {
+                cantAddInput = true;
+            }
+
             switch (arguments[0])
             {
                 case "input":
+                    if (cantAddInput)
+                    {
+                        UI.printInterpreterError("input should always be at the top of the file");
+                        System.exit(-1);
+                    }
                     handleInputArgument(command, arguments);
                     break;
 
@@ -64,6 +75,10 @@ public class Interpreter
 
                 case "xor":
                     handleXorArgument(command, arguments);
+                    break;
+
+                case "placeholder":
+                    handlePlaceholderArgument(command, arguments);
                     break;
 
                 default:
@@ -311,5 +326,19 @@ public class Interpreter
         gateManager.addLogicGate(GateType.XOR, inputs, outputs);
 
         UI.debugPrint("added XOR gate with inputs " + arguments[1] + " and outputs " + arguments[2]);
+    }
+
+        /**
+     *
+     * FORM: placeholder <NAME>"placeholder for a signal that is still to come"
+     *
+     * @param command
+     * @param arguments
+     */
+    public static void handlePlaceholderArgument(String command, String[] arguments)
+    {
+        signalManager.addSignal(arguments[1], false);
+
+        UI.debugPrint("added placeholder " + arguments[1]);
     }
 }

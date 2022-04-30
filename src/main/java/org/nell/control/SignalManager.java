@@ -44,6 +44,12 @@ public class SignalManager
         Signal[] newSignals = new Signal[signals.length + 1];
         int i = 0;
 
+        // Check if that signal already exists
+        if (doesSignalExist(name))
+        {
+            return getSignalByName(name);
+        }
+
         // Copy the old signals
         for (i = 0; i < signals.length; i++)
         {
@@ -78,6 +84,19 @@ public class SignalManager
     public Signal[] getSignals()
     {
         return this.signals;
+    }
+
+    public boolean doesSignalExist(String name)
+    {
+        for (Signal signal : signals)
+        {
+            if (signal.getName().equals(name))
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     public Signal getSignalByName(String name)
