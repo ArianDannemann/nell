@@ -8,6 +8,7 @@ import org.nell.model.Signal;
 import org.nell.model.LogicGate;
 import org.nell.model.Result;
 import org.nell.model.exceptions.NotSupportedException;
+import org.nell.model.logicgates.NotGate;
 import org.nell.view.UI;
 
 public class Interpreter
@@ -37,8 +38,15 @@ public class Interpreter
 
             Interpreter.currentLine = command;
 
-            if (!arguments[0].equals("input"))
+            if (!arguments[0].equals("input") && !cantAddInput)
             {
+                // Add not gates for all inputs
+                Signal[] inputs = signalManager.getSignals();
+                for (Signal input : inputs)
+                {
+                    gateManager.addLogicGate(new NotGate(new Signal[] {input}, new Signal[] {signalManager.addSignal("!" + input.getName(), false)}));
+                }
+
                 cantAddInput = true;
             }
 

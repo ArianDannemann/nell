@@ -13,9 +13,8 @@ public class GateManager
 {
     private LogicGate[] gates = new LogicGate[0];
 
-    public void addLogicGate(GateType type, Signal[] inputs, Signal[] outputs)
+    public void addLogicGate(LogicGate gate)
     {
-        LogicGate gate = null;
         LogicGate[] newGates = new LogicGate[gates.length + 1];
         int i = 0;
 
@@ -24,35 +23,38 @@ public class GateManager
             newGates[i] = gates[i];
         }
 
+        newGates[newGates.length - 1] = gate;
+
+        gates = newGates;
+    }
+
+    public void addLogicGate(GateType type, Signal[] inputs, Signal[] outputs)
+    {
         switch (type)
         {
             case AND:
-                gate = new AndGate(inputs, outputs);
+                addLogicGate(new AndGate(inputs, outputs));
                 break;
 
             case OR:
-                gate = new OrGate(inputs, outputs);
+                addLogicGate(new OrGate(inputs, outputs));
                 break;
 
             case NOT:
-                gate = new NotGate(inputs, outputs);
+                addLogicGate(new NotGate(inputs, outputs));
                 break;
 
             case NAND:
-                gate = new NandGate(inputs, outputs);
+                addLogicGate(new NandGate(inputs, outputs));
                 break;
 
             case XOR:
-                gate = new XorGate(inputs, outputs);
+                addLogicGate(new XorGate(inputs, outputs));
                 break;
 
             default:
                 break;
         }
-
-        newGates[newGates.length - 1] = gate;
-
-        gates = newGates;
     }
 
     public LogicGate[] getLogicGates()
