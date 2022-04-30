@@ -62,6 +62,10 @@ public class Interpreter
                     handleNandArgument(command, arguments);
                     break;
 
+                case "xor":
+                    handleXorArgument(command, arguments);
+                    break;
+
                 default:
                     UI.printInterpreterError("command '" + arguments[0] + "' not supported");
                     throw new NotSupportedException();
@@ -291,5 +295,21 @@ public class Interpreter
         gateManager.addLogicGate(GateType.NAND, inputs, outputs);
 
         UI.debugPrint("added NAND gate with inputs " + arguments[1] + " and outputs " + arguments[2]);
+    }
+
+    /**
+     *
+     * FORM: and <SIGNAL,...>"input" <SIGNAL>"output"
+     *
+     * @param command
+     * @param arguments
+     */
+    public static void handleXorArgument(String command, String[] arguments)
+    {
+        Signal[] inputs = signalManager.getSignalsByName(arguments[1]);
+        Signal[] outputs = new Signal[] { signalManager.addSignal(arguments[2], false) };
+        gateManager.addLogicGate(GateType.XOR, inputs, outputs);
+
+        UI.debugPrint("added XOR gate with inputs " + arguments[1] + " and outputs " + arguments[2]);
     }
 }

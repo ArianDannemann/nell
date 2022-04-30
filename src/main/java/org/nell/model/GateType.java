@@ -5,5 +5,6 @@ public enum GateType
     AND,
     OR,
     NOT,
-    NAND
+    NAND,
+    XOR
 }

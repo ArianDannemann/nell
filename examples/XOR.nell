@@ -1,0 +1,6 @@
+input a
+input b
+
+xor a,b = XOR
+
+show XOR

@@ -6,5 +6,6 @@ or a,b = OR
 not a = NOT_A
 not b = NOT_B
 nand a,b = NAND
+xor a,b = XOR
 
-show AND,OR,NAND,NOT_A,NOT_B
+show AND,OR,NAND,XOR,NOT_A,NOT_B

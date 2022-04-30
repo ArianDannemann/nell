@@ -1,12 +1,13 @@
 package org.nell.control;
 
 import org.nell.model.GateType;
-import org.nell.model.Signal;
 import org.nell.model.LogicGate;
+import org.nell.model.Signal;
 import org.nell.model.logicgates.AndGate;
 import org.nell.model.logicgates.NandGate;
 import org.nell.model.logicgates.NotGate;
 import org.nell.model.logicgates.OrGate;
+import org.nell.model.logicgates.XorGate;
 
 public class GateManager
 {
@@ -39,6 +40,10 @@ public class GateManager
 
             case NAND:
                 gate = new NandGate(inputs, outputs);
+                break;
+
+            case XOR:
+                gate = new XorGate(inputs, outputs);
                 break;
 
             default:

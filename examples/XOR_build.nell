@@ -1,0 +1,9 @@
+input a
+input b
+
+or a,b = OR
+and a,b = AND
+not AND = NAND
+and OR,NAND = XOR
+
+show XOR
