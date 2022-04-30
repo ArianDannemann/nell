@@ -1,4 +1,6 @@
-<img src="images/logo.png" alt="Kitten" title="A cute kitten" width="100" height="100" />
+<div style="text-align: center;">
+    <img src="images/logo.png" alt="logo" title="logo" width="150" height="150" />
+</div>
 
 # Nell
 
