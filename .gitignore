@@ -1,4 +1,5 @@
 .vscode/settings.json
 test/
 target/
-log.md
+
+*.log

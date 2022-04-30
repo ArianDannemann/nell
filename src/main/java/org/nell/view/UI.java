@@ -11,8 +11,9 @@ import org.nell.control.Interpreter;
 public class UI
 {
     private static String prefix = "[NELL] ";
-    private static String logFilePath = "./log.md";
+    private static String logFilePath = "./lates.log";
     public static boolean showDebugPrints = false;
+    public static boolean noLog = false;
 
     public static void clearLog()
     {
@@ -39,6 +40,11 @@ public class UI
     {
         FileWriter fileWriter;
         BufferedWriter bufferedWriter;
+
+        if (noLog)
+        {
+            return;
+        }
 
         try
         {

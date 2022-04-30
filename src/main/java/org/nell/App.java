@@ -40,12 +40,18 @@ public class App
                     UI.println("<path to .nell> \t-\t a path to the file that should be opened");
                     UI.println("-h, -help \t-\t shows this message");
                     UI.println("-d, -debug \t-\t shows debug output during interpretation and simulation");
+                    UI.println("-n, -nolog \t-\t disables writing output to logfile");
                     System.exit(0);
                     break;
 
                 case "-d":
                 case "-debug":
                     UI.showDebugPrints = true;
+                    break;
+
+                case "-n":
+                case "-nolog":
+                    UI.noLog = true;
                     break;
 
                 default:
