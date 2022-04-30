@@ -85,8 +85,8 @@ public class Interpreter
                     handleXorArgument(command, arguments);
                     break;
 
-                case "placeholder":
-                    handlePlaceholderArgument(command, arguments);
+                case "signal":
+                    handleSignalArgument(command, arguments);
                     break;
 
                 default:
@@ -338,15 +338,15 @@ public class Interpreter
 
         /**
      *
-     * FORM: placeholder <NAME>"placeholder for a signal that is still to come"
+     * FORM: signal <NAME>"placeholder for a signal that is still to come"
      *
      * @param command
      * @param arguments
      */
-    public static void handlePlaceholderArgument(String command, String[] arguments)
+    public static void handleSignalArgument(String command, String[] arguments)
     {
         signalManager.addSignal(arguments[1], false);
 
-        UI.debugPrint("added placeholder " + arguments[1]);
+        UI.debugPrint("added signal " + arguments[1]);
     }
 }

@@ -1,26 +1,26 @@
-# unsere inputs
 input L
 input M
 input S
 
-# unsere outputs
-placeholder G
-placeholder K
-placeholder N
-placeholder F
+signal G
+signal K
+signal N
+signal F
 
-# große und kleine geschwindigkeit bei der fahrt
+#------------------------------------------------
+
+# große und kleine geschwindigkeit
 and L,!M,!S = G
 and L,M,!S = K
 
 # notbremse
 or S,F = N
 
-# die beiden fälle die in einem fehler resultieren können
+# fehler
 and !L,M = F1
 and !M,S = F2
-# ob ein fehler ausgelöst wird
 or F1,F2 = F
 
-# welche variablen angezeigt werden sollen
+#------------------------------------------------
+
 show G,K,N,F
