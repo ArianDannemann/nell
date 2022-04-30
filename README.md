@@ -31,7 +31,7 @@ Nell is an interpreted language that describes simple circuits using logic gates
 
 Its current goal is be a quick prototyping tool for generating truth tables for a given circuit.
 
-There is also a VS Code extension that provides some syntax hightlighting: [nellext](https://marketplace.visualstudio.com/items?itemName=ArianDannemann.nellext)
+There is also a VS Code extension that provides some syntax highlighting: [nellext](https://marketplace.visualstudio.com/items?itemName=ArianDannemann.nellext)
 
 ## Installing Nell
 
