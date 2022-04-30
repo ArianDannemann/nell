@@ -1,3 +1,5 @@
+<img src="images/logo.png" alt="Kitten" title="A cute kitten" width="100" height="100" />
+
 # Nell
 
 ## Table of contents
