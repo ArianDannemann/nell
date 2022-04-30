@@ -4,9 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.nell.model.Signal;
-import org.nell.model.exceptions.InvalidSignalException;
 import org.nell.model.exceptions.NotSupportedException;
-import org.nell.view.UI;
 
 public class SignalManager
 {
@@ -74,8 +72,7 @@ public class SignalManager
     {
         if (index < 0 || index > this.signals.length - 1)
         {
-            UI.printInterpreterError("signal index " + index + " out of range");
-            throw new InvalidSignalException();
+            ErrorHandler.errorInLine("signal index " + index + " out of range", Interpreter.currentLine);
         }
 
         signals[index].setState(state);
@@ -109,8 +106,8 @@ public class SignalManager
             }
         }
 
-        UI.printInterpreterError("could not find signal '" + name + "'");
-        throw new InvalidSignalException();
+        ErrorHandler.errorInLine("could not find signal '" + name + "'", Interpreter.currentLine);
+        return null;
     }
 
     public Signal[] getSignalsByName(String argument)

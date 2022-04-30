@@ -7,7 +7,6 @@ import org.nell.model.GateType;
 import org.nell.model.Signal;
 import org.nell.model.LogicGate;
 import org.nell.model.Result;
-import org.nell.model.exceptions.NotSupportedException;
 import org.nell.model.logicgates.NotGate;
 import org.nell.view.UI;
 
@@ -55,8 +54,7 @@ public class Interpreter
                 case "input":
                     if (cantAddInput)
                     {
-                        UI.printInterpreterError("input should always be at the top of the file");
-                        System.exit(-1);
+                        ErrorHandler.errorInLine("input should always be at the top of the file", Interpreter.currentLine);
                     }
                     handleInputArgument(command, arguments);
                     break;
@@ -90,8 +88,7 @@ public class Interpreter
                     break;
 
                 default:
-                    UI.printInterpreterError("command '" + arguments[0] + "' not supported");
-                    throw new NotSupportedException();
+                    ErrorHandler.error("command '" + arguments[0] + "' not supported");
             }
         }
 

@@ -22,8 +22,7 @@ public class FileParser
         }
         catch (FileNotFoundException e)
         {
-            e.printStackTrace();
-            System.exit(1);
+            ErrorHandler.error("could not find file");
         }
 
         try (Scanner scanner = new Scanner(inputStream, StandardCharsets.UTF_8.name()))
