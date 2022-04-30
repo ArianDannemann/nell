@@ -1,0 +1,5 @@
+input a
+input b
+input c
+
+show !a,!b,!c

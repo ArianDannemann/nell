@@ -44,6 +44,8 @@ public class Interpreter
                 for (Signal input : inputs)
                 {
                     gateManager.addLogicGate(new NotGate(new Signal[] {input}, new Signal[] {signalManager.addSignal("!" + input.getName(), false)}));
+
+                    UI.debugPrint("generated signal !" + input.getName());
                 }
 
                 cantAddInput = true;
@@ -123,7 +125,7 @@ public class Interpreter
 
                 for (Signal output : gate.getOutputs())
                 {
-                    UI.debugPrint("simulating output: '" + output.getName() + "' -> " + output.getState());
+                    UI.debugPrint("-> triggered gate: " + gate.getClass().getSimpleName() + " for '" + output.getName() + "' -> " + output.getState());
                     simulateUpdatedSignal(gate, output);
                 }
             }
@@ -131,7 +133,7 @@ public class Interpreter
             // Enter the results in our table
             for (Signal visibleSignal : signalManager.getVisibleSignals())
             {
-                UI.debugPrint("added signal '" + visibleSignal.getName() + "' -> " + visibleSignal.getState() + " to results");
+                UI.debugPrint("-> added signal '" + visibleSignal.getName() + "' -> " + visibleSignal.getState() + " to results");
                 result.addOutputSignal(visibleSignal);
             }
 
@@ -186,6 +188,8 @@ public class Interpreter
 
     public static void simulateUpdatedSignal(LogicGate origin, Signal signal)
     {
+        UI.debugPrint("--> propagating effects");
+
         for (LogicGate gate : gateManager.getLogicGates())
         {
             boolean shouldBeTriggered = false;
@@ -213,7 +217,7 @@ public class Interpreter
 
             for (Signal output : gate.getOutputs())
             {
-                UI.debugPrint("simulating output: '" + output.getName() + "' -> " + output.getState());
+                UI.debugPrint("--> triggered gate through propagation: " + gate.getClass().getSimpleName() + " for '" + output.getName() + "' -> " + output.getState());
                 simulateUpdatedSignal(gate, output);
             }
         }

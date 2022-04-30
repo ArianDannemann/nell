@@ -18,6 +18,8 @@ public class App
     {
         String filePath = "";
 
+        UI.clearLog();
+
         if (args.length < 1)
         {
             ErrorHandler.error("no arguments given. use -help to get a list of all arguments");
