@@ -37,7 +37,7 @@ There is also a VS Code extension that provides some syntax highlighting: [nelle
 
 To get started clone this repository by typing `git clone https://github.com/ArianDannemann/nell.git` into your command line.
 
-You can then run `.nell` files by executing running `nell.jar` like this:
+You can then run `.nell` files by running `nell.jar` like this:
 
 ```
 java -jar nell.jar <path to .nell file>
