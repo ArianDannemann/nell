@@ -15,7 +15,7 @@ public class App
      */
     public static void main(String[] args)
     {
-        String[] lines = FileParser.getLinesFromFile("C:\\Users\\arian\\OneDrive\\Dokumente\\Code\\Java\\nell\\examples\\AND.nell");
+        String[] lines = FileParser.getLinesFromFile("C:\\Users\\arian\\OneDrive\\Dokumente\\Code\\Java\\nell\\examples\\all_gates.nell");
         UI.println("interpreting...");
         Interpreter.interpret(lines);
     }

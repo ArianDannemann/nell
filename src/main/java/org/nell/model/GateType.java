@@ -2,5 +2,8 @@ package org.nell.model;
 
 public enum GateType
 {
-    AND
+    AND,
+    OR,
+    NOT,
+    NAND
 }

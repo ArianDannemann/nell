@@ -4,6 +4,9 @@ import org.nell.model.GateType;
 import org.nell.model.Signal;
 import org.nell.model.LogicGate;
 import org.nell.model.logicgates.AndGate;
+import org.nell.model.logicgates.NandGate;
+import org.nell.model.logicgates.NotGate;
+import org.nell.model.logicgates.OrGate;
 
 public class GateManager
 {
@@ -24,6 +27,18 @@ public class GateManager
         {
             case AND:
                 gate = new AndGate(inputs, outputs);
+                break;
+
+            case OR:
+                gate = new OrGate(inputs, outputs);
+                break;
+
+            case NOT:
+                gate = new NotGate(inputs, outputs);
+                break;
+
+            case NAND:
+                gate = new NandGate(inputs, outputs);
                 break;
 
             default:

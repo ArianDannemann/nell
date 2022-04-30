@@ -1,0 +1,10 @@
+input a
+input b
+
+and a,b = AND
+or a,b = OR
+not a = NOT_A
+not b = NOT_B
+nand a,b = NAND
+
+show AND,OR,NAND,NOT_A,NOT_B

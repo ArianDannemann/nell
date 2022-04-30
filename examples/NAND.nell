@@ -1,0 +1,6 @@
+input a
+input b
+
+nand a,b = NAND
+
+show NAND

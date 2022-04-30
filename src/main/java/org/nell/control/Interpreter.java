@@ -29,6 +29,9 @@ public class Interpreter
 
         for (String command : commands)
         {
+            command = command.replace("= ", "");
+            command = command.replace("=", "");
+
             String[] arguments = command.split(" ");
 
             Interpreter.currentLine = command;
@@ -45,6 +48,18 @@ public class Interpreter
 
                 case "show":
                     handleShowArgument(command, arguments);
+                    break;
+
+                case "or":
+                    handleOrArgument(command, arguments);
+                    break;
+
+                case "not":
+                    handleNotArgument(command, arguments);
+                    break;
+
+                case "nand":
+                    handleNandArgument(command, arguments);
                     break;
 
                 default:
@@ -197,7 +212,7 @@ public class Interpreter
 
     /**
      *
-     * FORM: and <SIGNAL,...>"input" <SIGNAL, ...>"output"
+     * FORM: and <SIGNAL,...>"input" <SIGNAL>"output"
      *
      * @param command
      * @param arguments
@@ -209,6 +224,38 @@ public class Interpreter
         gateManager.addLogicGate(GateType.AND, inputs, outputs);
 
         UI.debugPrint("added AND gate with inputs " + arguments[1] + " and outputs " + arguments[2]);
+    }
+
+    /**
+     *
+     * FORM: or <SIGNAL,...>"input" <SIGNAL>"output"
+     *
+     * @param command
+     * @param arguments
+     */
+    public static void handleOrArgument(String command, String[] arguments)
+    {
+        Signal[] inputs = signalManager.getSignalsByName(arguments[1]);
+        Signal[] outputs = new Signal[] { signalManager.addSignal(arguments[2], false) };
+        gateManager.addLogicGate(GateType.OR, inputs, outputs);
+
+        UI.debugPrint("added OR gate with inputs " + arguments[1] + " and outputs " + arguments[2]);
+    }
+
+    /**
+     *
+     * FORM: not <SIGNAL>"input" <SIGNAL>"output"
+     *
+     * @param command
+     * @param arguments
+     */
+    public static void handleNotArgument(String command, String[] arguments)
+    {
+        Signal[] inputs = signalManager.getSignalsByName(arguments[1]);
+        Signal[] outputs = new Signal[] { signalManager.addSignal(arguments[2], false) };
+        gateManager.addLogicGate(GateType.NOT, inputs, outputs);
+
+        UI.debugPrint("added NOT gate with inputs " + arguments[1] + " and outputs " + arguments[2]);
     }
 
     /**
@@ -228,5 +275,21 @@ public class Interpreter
 
             UI.debugPrint("added signal " + signalName + " to visible signals");
         }
+    }
+
+    /**
+     *
+     * FORM: and <SIGNAL,...>"input" <SIGNAL>"output"
+     *
+     * @param command
+     * @param arguments
+     */
+    public static void handleNandArgument(String command, String[] arguments)
+    {
+        Signal[] inputs = signalManager.getSignalsByName(arguments[1]);
+        Signal[] outputs = new Signal[] { signalManager.addSignal(arguments[2], false) };
+        gateManager.addLogicGate(GateType.NAND, inputs, outputs);
+
+        UI.debugPrint("added NAND gate with inputs " + arguments[1] + " and outputs " + arguments[2]);
     }
 }
