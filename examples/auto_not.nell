@@ -1,5 +1,8 @@
+# demonstration of the automatic addition of not gates for all inputs
+
 input a
 input b
 input c
 
+# inverted options of inputs are immediatly available
 show !a,!b,!c

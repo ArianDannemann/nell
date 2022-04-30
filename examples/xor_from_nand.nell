@@ -1,3 +1,5 @@
+# demonstration of building xor from nand gates
+
 input x
 input y
 
