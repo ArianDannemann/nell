@@ -5,10 +5,12 @@ input b
 input c
 input d
 input e
+input f
+input g
 
-and a,b,c,d,e = AND
-or a,b,c,d,e = OR
-nand a,b,c,d,e = NAND
-xor a,b,c,d,e = XOR
+and a,b,c,d,e,f,g = AND
+or a,b,c,d,e,f,g = OR
+nand a,b,c,d,e,f,g = NAND
+xor a,b,c,d,e,f,g = XOR
 
 show AND,OR,NAND,XOR
