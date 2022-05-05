@@ -6,7 +6,7 @@
 
 <br>
 
-## Current version: [1.1.0](changelog.md)
+## Current version: [1.1.0](docs/changelog.md)
 
 ## Table of contents
 
@@ -133,7 +133,7 @@ This will tell Nell to display the variables in the resulting truth table.
 
 ## Gate types and commands
 
-For a complete list of gate types and commands look [here](gates.md).
+For a complete list of gate types and commands look [here](docs/gates.md).
 
 <br>
 
