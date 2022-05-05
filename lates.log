@@ -1,0 +1,3617 @@
+# nell log
+
+[NELL] opening: .\examples\multi_input.nell
+[NELL] interpreting...
+added input a
+added input b
+added input c
+added input d
+added input e
+added input f
+added input g
+generated signal !a
+generated signal !b
+generated signal !c
+generated signal !d
+generated signal !e
+generated signal !f
+generated signal !g
+added AND gate with inputs a,b,c,d,e,f,g and outputs AND
+added OR gate with inputs a,b,c,d,e,f,g and outputs OR
+added NAND gate with inputs a,b,c,d,e,f,g and outputs NAND
+added XOR gate with inputs a,b,c,d,e,f,g and outputs XOR
+added signal AND to visible signals
+added signal OR to visible signals
+added signal NAND to visible signals
+added signal XOR to visible signals
+[NELL] simulating...
+simulating: 0000000
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> false
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> false to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 0000001
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 0000010
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 0000011
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 0000100
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 0000101
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 0000110
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 0000111
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 0001000
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 0001001
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 0001010
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 0001011
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 0001100
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 0001101
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 0001110
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 0001111
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 0010000
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 0010001
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 0010010
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 0010011
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 0010100
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 0010101
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 0010110
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 0010111
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 0011000
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 0011001
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 0011010
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 0011011
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 0011100
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 0011101
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 0011110
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 0011111
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 0100000
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 0100001
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 0100010
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 0100011
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 0100100
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 0100101
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 0100110
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 0100111
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 0101000
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 0101001
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 0101010
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 0101011
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 0101100
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 0101101
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 0101110
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 0101111
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 0110000
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 0110001
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 0110010
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 0110011
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 0110100
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 0110101
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 0110110
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 0110111
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 0111000
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 0111001
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 0111010
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 0111011
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 0111100
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 0111101
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 0111110
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 0111111
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 1000000
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 1000001
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 1000010
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 1000011
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 1000100
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 1000101
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 1000110
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 1000111
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 1001000
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 1001001
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 1001010
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 1001011
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 1001100
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 1001101
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 1001110
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 1001111
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 1010000
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 1010001
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 1010010
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 1010011
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 1010100
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 1010101
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 1010110
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 1010111
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 1011000
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 1011001
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 1011010
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 1011011
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 1011100
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 1011101
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 1011110
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 1011111
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 1100000
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 1100001
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 1100010
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 1100011
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 1100100
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 1100101
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 1100110
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 1100111
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 1101000
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 1101001
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 1101010
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 1101011
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 1101100
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 1101101
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 1101110
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 1101111
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 1110000
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 1110001
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 1110010
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 1110011
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 1110100
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 1110101
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 1110110
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 1110111
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 1111000
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 1111001
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 1111010
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 1111011
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 1111100
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> true to results
+simulating: 1111101
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 1111110
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> true
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> true
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> false
+--> propagating effects
+-> added signal 'AND' -> false to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> true to results
+-> added signal 'XOR' -> false to results
+simulating: 1111111
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!c' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!d' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!e' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!f' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!g' -> false
+--> propagating effects
+-> triggered gate: AndGate for 'AND' -> true
+--> propagating effects
+-> triggered gate: OrGate for 'OR' -> true
+--> propagating effects
+-> triggered gate: NandGate for 'NAND' -> false
+--> propagating effects
+-> triggered gate: XorGate for 'XOR' -> true
+--> propagating effects
+-> added signal 'AND' -> true to results
+-> added signal 'OR' -> true to results
+-> added signal 'NAND' -> false to results
+-> added signal 'XOR' -> true to results
+[NELL] results:
+
+ abcdefg | 	AND	OR	NAND	XOR	
+
+ 0000000 | 	0	0	1	0	
+ 0000001 | 	0	1	1	1	
+ 0000010 | 	0	1	1	1	
+ 0000011 | 	0	1	1	0	
+ 0000100 | 	0	1	1	1	
+ 0000101 | 	0	1	1	0	
+ 0000110 | 	0	1	1	0	
+ 0000111 | 	0	1	1	1	
+ 0001000 | 	0	1	1	1	
+ 0001001 | 	0	1	1	0	
+ 0001010 | 	0	1	1	0	
+ 0001011 | 	0	1	1	1	
+ 0001100 | 	0	1	1	0	
+ 0001101 | 	0	1	1	1	
+ 0001110 | 	0	1	1	1	
+ 0001111 | 	0	1	1	0	
+ 0010000 | 	0	1	1	1	
+ 0010001 | 	0	1	1	0	
+ 0010010 | 	0	1	1	0	
+ 0010011 | 	0	1	1	1	
+ 0010100 | 	0	1	1	0	
+ 0010101 | 	0	1	1	1	
+ 0010110 | 	0	1	1	1	
+ 0010111 | 	0	1	1	0	
+ 0011000 | 	0	1	1	0	
+ 0011001 | 	0	1	1	1	
+ 0011010 | 	0	1	1	1	
+ 0011011 | 	0	1	1	0	
+ 0011100 | 	0	1	1	1	
+ 0011101 | 	0	1	1	0	
+ 0011110 | 	0	1	1	0	
+ 0011111 | 	0	1	1	1	
+ 0100000 | 	0	1	1	1	
+ 0100001 | 	0	1	1	0	
+ 0100010 | 	0	1	1	0	
+ 0100011 | 	0	1	1	1	
+ 0100100 | 	0	1	1	0	
+ 0100101 | 	0	1	1	1	
+ 0100110 | 	0	1	1	1	
+ 0100111 | 	0	1	1	0	
+ 0101000 | 	0	1	1	0	
+ 0101001 | 	0	1	1	1	
+ 0101010 | 	0	1	1	1	
+ 0101011 | 	0	1	1	0	
+ 0101100 | 	0	1	1	1	
+ 0101101 | 	0	1	1	0	
+ 0101110 | 	0	1	1	0	
+ 0101111 | 	0	1	1	1	
+ 0110000 | 	0	1	1	0	
+ 0110001 | 	0	1	1	1	
+ 0110010 | 	0	1	1	1	
+ 0110011 | 	0	1	1	0	
+ 0110100 | 	0	1	1	1	
+ 0110101 | 	0	1	1	0	
+ 0110110 | 	0	1	1	0	
+ 0110111 | 	0	1	1	1	
+ 0111000 | 	0	1	1	1	
+ 0111001 | 	0	1	1	0	
+ 0111010 | 	0	1	1	0	
+ 0111011 | 	0	1	1	1	
+ 0111100 | 	0	1	1	0	
+ 0111101 | 	0	1	1	1	
+ 0111110 | 	0	1	1	1	
+ 0111111 | 	0	1	1	0	
+ 1000000 | 	0	1	1	1	
+ 1000001 | 	0	1	1	0	
+ 1000010 | 	0	1	1	0	
+ 1000011 | 	0	1	1	1	
+ 1000100 | 	0	1	1	0	
+ 1000101 | 	0	1	1	1	
+ 1000110 | 	0	1	1	1	
+ 1000111 | 	0	1	1	0	
+ 1001000 | 	0	1	1	0	
+ 1001001 | 	0	1	1	1	
+ 1001010 | 	0	1	1	1	
+ 1001011 | 	0	1	1	0	
+ 1001100 | 	0	1	1	1	
+ 1001101 | 	0	1	1	0	
+ 1001110 | 	0	1	1	0	
+ 1001111 | 	0	1	1	1	
+ 1010000 | 	0	1	1	0	
+ 1010001 | 	0	1	1	1	
+ 1010010 | 	0	1	1	1	
+ 1010011 | 	0	1	1	0	
+ 1010100 | 	0	1	1	1	
+ 1010101 | 	0	1	1	0	
+ 1010110 | 	0	1	1	0	
+ 1010111 | 	0	1	1	1	
+ 1011000 | 	0	1	1	1	
+ 1011001 | 	0	1	1	0	
+ 1011010 | 	0	1	1	0	
+ 1011011 | 	0	1	1	1	
+ 1011100 | 	0	1	1	0	
+ 1011101 | 	0	1	1	1	
+ 1011110 | 	0	1	1	1	
+ 1011111 | 	0	1	1	0	
+ 1100000 | 	0	1	1	0	
+ 1100001 | 	0	1	1	1	
+ 1100010 | 	0	1	1	1	
+ 1100011 | 	0	1	1	0	
+ 1100100 | 	0	1	1	1	
+ 1100101 | 	0	1	1	0	
+ 1100110 | 	0	1	1	0	
+ 1100111 | 	0	1	1	1	
+ 1101000 | 	0	1	1	1	
+ 1101001 | 	0	1	1	0	
+ 1101010 | 	0	1	1	0	
+ 1101011 | 	0	1	1	1	
+ 1101100 | 	0	1	1	0	
+ 1101101 | 	0	1	1	1	
+ 1101110 | 	0	1	1	1	
+ 1101111 | 	0	1	1	0	
+ 1110000 | 	0	1	1	1	
+ 1110001 | 	0	1	1	0	
+ 1110010 | 	0	1	1	0	
+ 1110011 | 	0	1	1	1	
+ 1110100 | 	0	1	1	0	
+ 1110101 | 	0	1	1	1	
+ 1110110 | 	0	1	1	1	
+ 1110111 | 	0	1	1	0	
+ 1111000 | 	0	1	1	0	
+ 1111001 | 	0	1	1	1	
+ 1111010 | 	0	1	1	1	
+ 1111011 | 	0	1	1	0	
+ 1111100 | 	0	1	1	1	
+ 1111101 | 	0	1	1	0	
+ 1111110 | 	0	1	1	0	
+ 1111111 | 	1	1	0	1	
+
+[NELL] got 128 results

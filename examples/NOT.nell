@@ -1,8 +1,0 @@
-# demonstration of the not gate
-
-input a
-
-# NOT will be true if a is false and vice versa
-not a = NOT
-
-show NOT

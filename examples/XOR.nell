@@ -1,9 +1,0 @@
-# demonstration of the xor gate
-
-input a
-input b
-
-# XOR will be true if either a or b is true, but not both
-xor a,b = XOR
-
-show XOR

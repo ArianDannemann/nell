@@ -1,0 +1,103 @@
+# nell log
+
+[NELL] opening: .\examples\nesting.nell
+[NELL] interpreting...
+added input a
+added input b
+generated signal !a
+generated signal !b
+added OR gate with inputs a,b and outputs c
+added NOT gate with inputs c and outputs NOR
+running subcircuit 'nor'
+recorded: input a
+recorded: input b
+recorded: or a,b = c
+recorded: not c = NOR
+recorded: show NOR
+sub command length: 5
+added input a
+added input b
+generated signal !a
+generated signal !b
+added OR gate with inputs a,b and outputs c
+added NOT gate with inputs c and outputs NOR
+added signal NOR to visible signals
+simulating: 00
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: OrGate for 'c' -> false
+--> propagating effects
+--> triggered gate through propagation: NotGate for 'NOR' -> true
+--> propagating effects
+-> triggered gate: NotGate for 'NOR' -> true
+--> propagating effects
+-> added signal 'NOR' -> true to results
+[NELL] results:
+
+ ab | 	NOR	
+
+ 00 | 	1	
+
+returning
+added signal NOR to visible signals
+[NELL] simulating...
+simulating: 00
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: OrGate for 'c' -> false
+--> propagating effects
+--> triggered gate through propagation: NotGate for 'NOR' -> true
+--> propagating effects
+-> triggered gate: NotGate for 'NOR' -> true
+--> propagating effects
+-> added signal 'NOR' -> true to results
+simulating: 01
+-> triggered gate: NotGate for '!a' -> true
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'c' -> true
+--> propagating effects
+--> triggered gate through propagation: NotGate for 'NOR' -> false
+--> propagating effects
+-> triggered gate: NotGate for 'NOR' -> false
+--> propagating effects
+-> added signal 'NOR' -> false to results
+simulating: 10
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> true
+--> propagating effects
+-> triggered gate: OrGate for 'c' -> true
+--> propagating effects
+--> triggered gate through propagation: NotGate for 'NOR' -> false
+--> propagating effects
+-> triggered gate: NotGate for 'NOR' -> false
+--> propagating effects
+-> added signal 'NOR' -> false to results
+simulating: 11
+-> triggered gate: NotGate for '!a' -> false
+--> propagating effects
+-> triggered gate: NotGate for '!b' -> false
+--> propagating effects
+-> triggered gate: OrGate for 'c' -> true
+--> propagating effects
+--> triggered gate through propagation: NotGate for 'NOR' -> false
+--> propagating effects
+-> triggered gate: NotGate for 'NOR' -> false
+--> propagating effects
+-> added signal 'NOR' -> false to results
+[NELL] results:
+
+ ab | 	NOR	
+
+ 00 | 	1	
+ 01 | 	0	
+ 10 | 	0	
+ 11 | 	0	
+
+[NELL] got 4 results

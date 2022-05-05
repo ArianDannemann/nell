@@ -1,8 +1,0 @@
-# you can define specific input settings that should get simulated
-
-input a = 0
-input b = 1
-
-and a,b = OUT
-
-show OUT

@@ -1,9 +1,0 @@
-# demonstration of building nand with other gates
-
-input a
-input b
-
-and a,b = AND
-not AND = NAND
-
-show NAND
