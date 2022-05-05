@@ -1,0 +1,14 @@
+# demonstration of building xor from nand gates
+
+input x
+input y
+
+nand x,x = notX
+nand y,y = notY
+
+nand notX,y = a
+nand x,notY = b
+
+nand a,b = z
+
+show z

@@ -1,0 +1,9 @@
+# demonstration of the and gate
+
+input a
+input b
+
+# AND will be true if a and b are true
+and a,b = AND
+
+show AND

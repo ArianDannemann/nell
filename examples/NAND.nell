@@ -1,0 +1,9 @@
+# demonstration of the nand gate
+
+input a
+input b
+
+# NAND will be true aslong as one of the inputs is false
+nand a,b = NAND
+
+show NAND

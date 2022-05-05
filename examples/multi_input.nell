@@ -1,0 +1,16 @@
+# test for working with many inputs
+
+input a
+input b
+input c
+input d
+input e
+input f
+input g
+
+and a,b,c,d,e,f,g = AND
+or a,b,c,d,e,f,g = OR
+nand a,b,c,d,e,f,g = NAND
+xor a,b,c,d,e,f,g = XOR
+
+show AND,OR,NAND,XOR

@@ -1,0 +1,9 @@
+# demonstration of the or gate
+
+input a
+input b
+
+# OR will be true if atleast one of a or b is true
+or a,b = OR
+
+show OR
