@@ -1,0 +1,12 @@
+# demonstration of all the available nell gates
+
+input a
+input b
+
+and a,b = AND
+or a,b = OR
+not a = NOT
+xor a,b = XOR
+nand a,b = NAND
+
+show AND,OR,NOT,XOR,NAND
