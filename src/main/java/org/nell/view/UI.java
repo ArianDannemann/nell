@@ -10,7 +10,7 @@ import org.nell.control.ErrorHandler;
 public class UI
 {
     private static String prefix = "[NELL] ";
-    private static String logFilePath = "./lates.log";
+    private static String logFilePath = "./latest.log";
     public static boolean showDebugPrints = false;
     public static boolean noLog = false;
     public static boolean isNested = false;
