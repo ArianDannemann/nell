@@ -6,11 +6,11 @@
 
 <br>
 
-## Current version: [1.1.0](docs/changelog.md)
+## Current version: [1.1.1](docs/changelog.md)
 
 ## Table of contents
 
-- [Current version: 1.1.0](#current-version-110)
+- [Current version: 1.1.1](#current-version-111)
 - [Table of contents](#table-of-contents)
 - [Introduction](#introduction)
 - [Installation](#installation)

@@ -6,6 +6,12 @@
 
 <br>
 
+## Version 1.1.1
+
+- Added `NOR` gate. It will return `true` if all inputs are `false`
+
+<br>
+
 ## Version 1.1.0
 
 - Added supported for nested circuit. You can now define a circuit using `define <NAME> { ... }` and later simulate a specific input setting for that circuit to use the results as a normal gate
