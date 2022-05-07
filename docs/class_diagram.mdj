@@ -5929,19 +5929,19 @@
 										},
 										{
 											"_type": "UMLAttributeView",
-											"_id": "AAAAAAGAlXbsxM3i/1s=",
+											"_id": "AAAAAAGAndk22ZxOgJM=",
 											"_parent": {
 												"$ref": "AAAAAAGAlWzx5Mu0StQ="
 											},
 											"model": {
-												"$ref": "AAAAAAGAlXbsvc3f7zg="
+												"$ref": "AAAAAAGAndk2v5xLWOA="
 											},
 											"font": "Arial;13;0",
 											"left": 1269,
 											"top": 428,
 											"width": 388.3876953125,
 											"height": 13,
-											"text": "-inputCount: int",
+											"text": "-simulator: Simulator",
 											"horizontalAlignment": 0
 										},
 										{
@@ -5963,6 +5963,23 @@
 										},
 										{
 											"_type": "UMLAttributeView",
+											"_id": "AAAAAAGAlXeL1c4FAlk=",
+											"_parent": {
+												"$ref": "AAAAAAGAlWzx5Mu0StQ="
+											},
+											"model": {
+												"$ref": "AAAAAAGAlXeLzs4C4j8="
+											},
+											"font": "Arial;13;0",
+											"left": 1269,
+											"top": 458,
+											"width": 388.3876953125,
+											"height": 13,
+											"text": "-commands: List<String>",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
 											"_id": "AAAAAAGAlXcp1M3w32c=",
 											"_parent": {
 												"$ref": "AAAAAAGAlWzx5Mu0StQ="
@@ -5970,9 +5987,10 @@
 											"model": {
 												"$ref": "AAAAAAGAlXcpzc3tKuk="
 											},
+											"visible": false,
 											"font": "Arial;13;0",
 											"left": 1269,
-											"top": 458,
+											"top": 488,
 											"width": 388.3876953125,
 											"height": 13,
 											"text": "-circuitResults: List<Result>",
@@ -5997,6 +6015,23 @@
 										},
 										{
 											"_type": "UMLAttributeView",
+											"_id": "AAAAAAGAlXbsxM3i/1s=",
+											"_parent": {
+												"$ref": "AAAAAAGAlWzx5Mu0StQ="
+											},
+											"model": {
+												"$ref": "AAAAAAGAlXbsvc3f7zg="
+											},
+											"font": "Arial;13;0",
+											"left": 1269,
+											"top": 488,
+											"width": 388.3876953125,
+											"height": 13,
+											"text": "-inputCount: int",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
 											"_id": "AAAAAAGAlXd3lM3+nks=",
 											"_parent": {
 												"$ref": "AAAAAAGAlWzx5Mu0StQ="
@@ -6006,27 +6041,10 @@
 											},
 											"font": "Arial;13;0",
 											"left": 1269,
-											"top": 488,
-											"width": 388.3876953125,
-											"height": 13,
-											"text": "-ignorationLevel: int",
-											"horizontalAlignment": 0
-										},
-										{
-											"_type": "UMLAttributeView",
-											"_id": "AAAAAAGAlXeL1c4FAlk=",
-											"_parent": {
-												"$ref": "AAAAAAGAlWzx5Mu0StQ="
-											},
-											"model": {
-												"$ref": "AAAAAAGAlXeLzs4C4j8="
-											},
-											"font": "Arial;13;0",
-											"left": 1269,
 											"top": 503,
 											"width": 388.3876953125,
 											"height": 13,
-											"text": "-commands: List<String>",
+											"text": "-layer: int",
 											"horizontalAlignment": 0
 										},
 										{
@@ -6404,7 +6422,7 @@
 							"left": 1264,
 							"top": 368,
 							"width": 398.3876953125,
-							"height": 377,
+							"height": 386,
 							"nameCompartment": {
 								"$ref": "AAAAAAGAlWzx5MuvgAE="
 							},
@@ -8023,12 +8041,12 @@
 										"$ref": "AAAAAAGAlYlJFQGQuLQ="
 									},
 									"font": "Arial;13;0",
-									"left": 1945,
-									"top": 726,
+									"left": 1967,
+									"top": 616,
 									"width": 200.509765625,
 									"height": 13,
-									"alpha": -1.669484638817766,
-									"distance": 101.49384217774002,
+									"alpha": 0.7378146076320024,
+									"distance": 14.866068747318506,
 									"hostEdge": {
 										"$ref": "AAAAAAGAlYlJFQGSbiw="
 									},
@@ -8430,7 +8448,7 @@
 							"tail": {
 								"$ref": "AAAAAAGAlWzx5MuuvAM="
 							},
-							"points": "1632:744;1632:882;1664:882",
+							"points": "1632:753;1632:882;1664:882",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGAlYrdxRS06k0="
@@ -8462,12 +8480,12 @@
 										"$ref": "AAAAAAGAlYvzfyIPeOM="
 									},
 									"font": "Arial;13;0",
-									"left": 1447,
-									"top": 875,
+									"left": 1350,
+									"top": 907,
 									"width": 182.482421875,
 									"height": 13,
-									"alpha": 0.05258320058508703,
-									"distance": 38.05259518088089,
+									"alpha": -0.9586438798194883,
+									"distance": 114.85643212288984,
 									"hostEdge": {
 										"$ref": "AAAAAAGAlYvzfyIRABU="
 									},
@@ -8486,7 +8504,7 @@
 									"visible": null,
 									"font": "Arial;13;0",
 									"left": 1566,
-									"top": 837,
+									"top": 841,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -8507,7 +8525,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 1521,
-									"top": 838,
+									"top": 842,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -8524,7 +8542,7 @@
 							"tail": {
 								"$ref": "AAAAAAGAlWzx5MuuvAM="
 							},
-							"points": "1536:744;1536:944",
+							"points": "1536:753;1536:944",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGAlYvzfyISfzM="
@@ -8618,7 +8636,7 @@
 							"tail": {
 								"$ref": "AAAAAAGAlWzx5MuuvAM="
 							},
-							"points": "1600:744;1600:997;1888:997",
+							"points": "1600:753;1600:997;1888:997",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGAlYx1ACfoHIk="
@@ -8848,7 +8866,7 @@
 										"$ref": "AAAAAAGAlZDDFl5nKWM="
 									},
 									"edgePosition": 1,
-									"text": "+used to model the circuit"
+									"text": "+generates some gates"
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -8900,7 +8918,7 @@
 							"tail": {
 								"$ref": "AAAAAAGAlWzx5MuuvAM="
 							},
-							"points": "1568:744;1568:1136;1392:1136;1392:1312",
+							"points": "1568:753;1568:1136;1392:1136;1392:1312",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGAlZDDF15oI5Y="
@@ -8932,17 +8950,17 @@
 										"$ref": "AAAAAAGAlZFTzGUHTKY="
 									},
 									"font": "Arial;13;0",
-									"left": 1439,
-									"top": 1182,
+									"left": 1463,
+									"top": 1224,
 									"width": 204.8515625,
 									"height": 13,
-									"alpha": -3.945170817123042,
-									"distance": 38.897300677553446,
+									"alpha": -1.7975944445115806,
+									"distance": 13.341664064126334,
 									"hostEdge": {
 										"$ref": "AAAAAAGAlZFTzGUJfo4="
 									},
 									"edgePosition": 1,
-									"text": "+used to model results of the circuit"
+									"text": "+gets results from simulator"
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -8994,7 +9012,7 @@
 							"tail": {
 								"$ref": "AAAAAAGAlWzx5MuuvAM="
 							},
-							"points": "1568:744;1568:1217;1656:1217",
+							"points": "1568:753;1568:1217;1656:1217",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGAlZFTzGUKgg4="
@@ -9088,7 +9106,7 @@
 							"tail": {
 								"$ref": "AAAAAAGAlWzx5MuuvAM="
 							},
-							"points": "1568:744;1568:1096;2048:1096;2048:1160",
+							"points": "1568:753;1568:1096;2048:1096;2048:1160",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGAlZICD2l3i6k="
@@ -12040,7 +12058,7 @@
 									"_parent": {
 										"$ref": "AAAAAAGAlWzx5Mussu8="
 									},
-									"name": "used to model the circuit",
+									"name": "generates some gates",
 									"source": {
 										"$ref": "AAAAAAGAlWzx5Mussu8="
 									},
@@ -12054,7 +12072,7 @@
 									"_parent": {
 										"$ref": "AAAAAAGAlWzx5Mussu8="
 									},
-									"name": "used to model results of the circuit",
+									"name": "gets results from simulator",
 									"source": {
 										"$ref": "AAAAAAGAlWzx5Mussu8="
 									},
@@ -12118,13 +12136,15 @@
 								},
 								{
 									"_type": "UMLAttribute",
-									"_id": "AAAAAAGAlXbsvc3f7zg=",
+									"_id": "AAAAAAGAndk2v5xLWOA=",
 									"_parent": {
 										"$ref": "AAAAAAGAlWzx5Mussu8="
 									},
-									"name": "inputCount",
+									"name": "simulator",
 									"visibility": "private",
-									"type": "int"
+									"type": {
+										"$ref": "AAAAAAGAncnZMA+FZ7M="
+									}
 								},
 								{
 									"_type": "UMLAttribute",
@@ -12133,6 +12153,16 @@
 										"$ref": "AAAAAAGAlWzx5Mussu8="
 									},
 									"name": "intputStates",
+									"visibility": "private",
+									"type": "List<String>"
+								},
+								{
+									"_type": "UMLAttribute",
+									"_id": "AAAAAAGAlXeLzs4C4j8=",
+									"_parent": {
+										"$ref": "AAAAAAGAlWzx5Mussu8="
+									},
+									"name": "commands",
 									"visibility": "private",
 									"type": "List<String>"
 								},
@@ -12158,23 +12188,23 @@
 								},
 								{
 									"_type": "UMLAttribute",
-									"_id": "AAAAAAGAlXd3jc37xZ8=",
+									"_id": "AAAAAAGAlXbsvc3f7zg=",
 									"_parent": {
 										"$ref": "AAAAAAGAlWzx5Mussu8="
 									},
-									"name": "ignorationLevel",
+									"name": "inputCount",
 									"visibility": "private",
 									"type": "int"
 								},
 								{
 									"_type": "UMLAttribute",
-									"_id": "AAAAAAGAlXeLzs4C4j8=",
+									"_id": "AAAAAAGAlXd3jc37xZ8=",
 									"_parent": {
 										"$ref": "AAAAAAGAlWzx5Mussu8="
 									},
-									"name": "commands",
+									"name": "layer",
 									"visibility": "private",
-									"type": "List<String>"
+									"type": "int"
 								},
 								{
 									"_type": "UMLAttribute",
@@ -13112,7 +13142,8 @@
 											"_parent": {
 												"$ref": "AAAAAAGAncuQHBc2eUk="
 											},
-											"name": "int inputCount"
+											"name": "int inputCount",
+											"type": ""
 										},
 										{
 											"_type": "UMLParameter",
@@ -13120,7 +13151,8 @@
 											"_parent": {
 												"$ref": "AAAAAAGAncuQHBc2eUk="
 											},
-											"name": "SignalManager signalManager"
+											"name": "SignalManager signalManager",
+											"type": ""
 										},
 										{
 											"_type": "UMLParameter",
@@ -13128,7 +13160,8 @@
 											"_parent": {
 												"$ref": "AAAAAAGAncuQHBc2eUk="
 											},
-											"name": "GateManager gateManager"
+											"name": "GateManager gateManager",
+											"type": ""
 										},
 										{
 											"_type": "UMLParameter",
@@ -13136,7 +13169,8 @@
 											"_parent": {
 												"$ref": "AAAAAAGAncuQHBc2eUk="
 											},
-											"name": "List[String] inputStates"
+											"name": "List[String] inputStates",
+											"type": ""
 										},
 										{
 											"_type": "UMLParameter",
@@ -13144,7 +13178,8 @@
 											"_parent": {
 												"$ref": "AAAAAAGAncuQHBc2eUk="
 											},
-											"name": "boolean isNested"
+											"name": "boolean isNested",
+											"type": ""
 										}
 									]
 								},
