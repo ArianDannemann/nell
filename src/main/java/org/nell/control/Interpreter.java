@@ -38,6 +38,7 @@ public class Interpreter
         gateManager = new GateManager();
         ErrorHandler.currentLine = "";
         this.inputCount = 0;
+        this.inputStates.clear();
         boolean cantAddInput = false;
 
         // If an input state was specified, assume we are a nested interpreter
