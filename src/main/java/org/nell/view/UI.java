@@ -4,8 +4,11 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.List;
 
 import org.nell.control.ErrorHandler;
+import org.nell.model.Result;
+import org.nell.model.Signal;
 
 public class UI
 {
@@ -85,5 +88,40 @@ public class UI
         }
 
         UI.println(message);
+    }
+
+    public static void showCircuitResults(List<Result> circuitResults)
+    {
+        Result firstResult = circuitResults.get(0);
+
+        UI.println("got " + circuitResults.size() + " results:\n");
+
+        UI.print("INPUT\t");
+        for (Signal output : firstResult.getOutputSignals())
+        {
+            UI.print("|\t" + output.getName() + "\t");
+        }
+        UI.print("\n");
+
+        UI.print("--------");
+        for (Signal output : firstResult.getOutputSignals())
+        {
+            UI.print("|---------------");
+        }
+        UI.print("\n");
+
+        for (Result result : circuitResults)
+        {
+            UI.print(result.getInputSettings() + "\t");
+
+            for (Signal output : result.getOutputSignals())
+            {
+                UI.print("|\t" + (output.getState() == true ? '1' : '0') + "\t");
+            }
+
+            UI.print("\n");
+        }
+
+        UI.print("\n");
     }
 }

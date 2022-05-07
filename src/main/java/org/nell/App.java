@@ -12,21 +12,14 @@ public class App
 {
     private static String filePath = "";
 
-    /**
-     * Hello, world!
-     *
-     * args 0: File path
-     *
-     * @param args
-     */
     public static void main(String[] args)
     {
         Interpreter interpreter = new Interpreter();
 
+        //args = new String[] { ".\\examples\\all_gates.nell" };
+
         UI.clearLog();
         handleArguments(args);
-
-        //args = new String[] { ".\\examples\\multi_input.nell" };
 
         UI.println("opening: " + filePath);
 

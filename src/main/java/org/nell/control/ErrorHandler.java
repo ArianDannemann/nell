@@ -23,4 +23,12 @@ public class ErrorHandler
         UI.println(" >>> ERROR: " + "line: '" + line + "'");
         System.exit(1);
     }
+
+    public static void assertArgumentCount(int expectedCount, int actualCount, String commandName)
+    {
+        if (expectedCount != actualCount)
+        {
+            ErrorHandler.errorInLine("invalid number of arguments, command '" + commandName + "' expects " + expectedCount + " arguments but got " + actualCount);
+        }
+    }
 }

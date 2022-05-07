@@ -5,7 +5,6 @@ import java.util.List;
 
 import org.nell.model.GateType;
 import org.nell.model.Signal;
-import org.nell.model.LogicGate;
 import org.nell.model.Result;
 import org.nell.model.logicgates.NotGate;
 import org.nell.model.logicgates.SubCircuitGate;
@@ -13,18 +12,24 @@ import org.nell.view.UI;
 
 public class Interpreter
 {
+    // Used to model the current circuit, will be filled with content by interpreter
     private SignalManager signalManager = new SignalManager();
     private GateManager gateManager = new GateManager();
-    private int inputCount = 0;
+    // The actual circuit will be passed on to the simulator
+    private Simulator simulator = null;
 
+    // List of defined input states, if this list is empty, all possible input combinations will be tried
     private List<String> inputStates = new ArrayList<>();
-    private List<Result> circuitResults = new ArrayList<>();
-
-    private int currentCommandIndex = 0;
-    private int ignorationLevel = 0;
+    // List of commands to be interpreted
     private List<String> commands = new ArrayList<>();
-    private SubCircuitGate currentSubCircuitGate;
 
+    // Number of input signals
+    private int inputCount = 0;
+    // How many layers we are inside of subcircuits, 0 == no subcircuit
+    private int layer = 0;
+    // The current subcircuit we are creating
+    private SubCircuitGate currentSubCircuitGate;
+    // Are we ourselfes a subcircuit?
     private boolean isNested = false;
 
     public List<Result> interpret(String[] commands, String inputState)
@@ -55,7 +60,6 @@ public class Interpreter
             String[] arguments = command.split(" ");
 
             ErrorHandler.currentLine = command;
-            this.currentCommandIndex++;
 
             if (!arguments[0].equals("input") && !cantAddInput)
             {
@@ -74,17 +78,17 @@ public class Interpreter
             // Start ignoring commands when encountering an opening bracket
             if (command.contains("{"))
             {
-                this.ignorationLevel++;
+                this.layer++;
             }
             else if (command.contains("}"))
             {
-                this.ignorationLevel--;
+                this.layer--;
 
-                if (this.ignorationLevel < 0)
+                if (this.layer < 0)
                 {
                     ErrorHandler.errorInLine("out of place '}'");
                 }
-                else if (this.ignorationLevel == 0)
+                else if (this.layer == 0)
                 {
                     // Add the commands to the circuit
                     this.currentSubCircuitGate.addCommands(StringHelper.listToArray(this.commands));
@@ -96,7 +100,7 @@ public class Interpreter
 
             // Check if we are in a subcircuit
             // We still want to handle the first layer 'define' command
-            if (this.ignorationLevel > 0 && !(this.ignorationLevel == 1 && command.contains("define")))
+            if (this.layer > 0 && !(this.layer == 1 && command.contains("define")))
             {
                 // Record the command to a subcircuit
                 recordToSubCircuit(command);
@@ -161,227 +165,10 @@ public class Interpreter
             }
         }
 
-        simulate();
+        // Setup the simulator with all the information we interpreted from the file
+        simulator = new Simulator(this.inputCount, this.signalManager, this.gateManager, this.inputStates, this.isNested);
 
-        return this.circuitResults;
-    }
-
-    public List<Result> simulate()
-    {
-        if (!this.isNested)
-        {
-            UI.println("simulating...");
-        }
-
-        String[] inputTable = TableGenerator.generateInputTable(this.inputCount);
-
-        // The uses has specified certain inputs, use those instead of simulating the whole truth table
-        if (this.inputStates.size() > 0)
-        {
-            inputTable = new String[this.inputStates.size()];
-            int i = 0;
-
-            for (i = 0; i < this.inputStates.size(); i++)
-            {
-                inputTable[i] = this.inputStates.get(i);
-            }
-        }
-
-        // Go through all possible input combinations
-        for (String inputSetting : inputTable)
-        {
-            Result result = new Result(inputSetting);
-
-            UI.debugPrint("simulating: " + inputSetting);
-
-            char[] inputStates = inputSetting.toCharArray();
-            int i = 0;
-
-            // Set the input bits
-            for (i = 0; i < inputStates.length; i++)
-            {
-                signalManager.setSignal(i, inputStates[i] == '0' ? false : true);
-            }
-
-            // Simulate the circuit
-            for (LogicGate gate : gateManager.getLogicGates())
-            {
-                gate.trigger();
-
-                for (Signal output : gate.getOutputs())
-                {
-                    UI.debugPrint("-> triggered gate: " + gate.getClass().getSimpleName() + " for '" + output.getName() + "' -> " + output.getState());
-                    simulateUpdatedSignal(gate, output);
-                }
-            }
-
-            // Enter the results in our table
-            for (Signal visibleSignal : signalManager.getVisibleSignals())
-            {
-                UI.debugPrint("-> added signal '" + visibleSignal.getName() + "' -> " + visibleSignal.getState() + " to results");
-                result.addOutputSignal(visibleSignal);
-            }
-
-            this.circuitResults.add(result);
-        }
-
-        showResults();
-
-        return this.circuitResults;
-    }
-
-    /*public boolean runSubCircuit(String name, String[] arguments)
-    {
-        boolean recordCommands = false;
-        List<String> subCircuitCommandList = new ArrayList<>();
-        String[] subCircuitCommands = null;
-        int layer = 0;
-        String[] inputSignals;
-        String inputState = "";
-
-        UI.debugPrint("running subcircuit '" + name + "'");
-
-        // Go through all commands of the current circuit
-        for (String otherCommand : this.commands)
-        {
-            //UI.println("other command: " + otherCommand);
-
-            // Check if the command starts our subcircuit
-            if (otherCommand.equals("define " + name + " {"))
-            {
-                recordCommands = true;
-                layer = 1;
-                continue;
-            }
-
-            //UI.println("layer: " + layer);
-
-            if (otherCommand.contains("{"))
-            {
-                layer++;
-            }
-            else if (otherCommand.contains("}"))
-            {
-                layer--;
-
-                // If we have reached the final closing bracked and we are currently recording commands, stop looping over them
-                if (layer == 0 && recordCommands)
-                {
-                    break;
-                }
-            }
-
-            // Record the command if it belongs to the subcircuit
-            if (recordCommands)
-            {
-                subCircuitCommandList.add(otherCommand);
-
-                UI.debugPrint("recorded: " + otherCommand);
-            }
-        }
-
-        // Copy command list into array
-        subCircuitCommands = new String[subCircuitCommandList.size()];
-        for (int i = 0; i < subCircuitCommandList.size(); i++)
-        {
-            subCircuitCommands[i] = subCircuitCommandList.get(i);
-        }
-        UI.debugPrint("sub command length: " + subCircuitCommands.length);
-
-        inputSignals = arguments[1].split(",");
-        for (String inputSignal : inputSignals)
-        {
-            Signal signal = signalManager.getSignalByName(inputSignal);
-            inputState += signal.getState() == true ? '1' : '0';
-        }
-
-        // Run the subcircuit in a new interpreter
-        Interpreter subInterpreter = new Interpreter();
-        List<Result> results = subInterpreter.interpret(subCircuitCommands, inputState);
-
-        UI.debugPrint("returning");
-
-        return true;
-    }*/
-
-    public void showResults()
-    {
-        // Show the results
-        UI.println("results:");
-        UI.print("\n ");
-
-        int c = 0;
-        for (Signal input : signalManager.getSignals())
-        {
-            UI.print(input.getName());
-
-            c++;
-
-            if (c == this.inputCount)
-            {
-                break;
-            }
-        }
-
-        UI.print(" | \t");
-
-        for (Signal visibleSignal : signalManager.getVisibleSignals())
-        {
-            UI.print(visibleSignal.getName() + "\t");
-        }
-
-        UI.print("\n\n");
-
-        for (Result result : this.circuitResults)
-        {
-            UI.print(" " + result.getInputSettings() + " | \t");
-
-            for (Signal signal : result.getOutputSignals())
-            {
-                UI.print("" + (signal.getState() ? '1' : '0') + "\t");
-            }
-
-            UI.print("\n");
-        }
-
-        UI.print("\n");
-    }
-
-    public void simulateUpdatedSignal(LogicGate origin, Signal signal)
-    {
-        UI.debugPrint("--> propagating effects");
-
-        for (LogicGate gate : gateManager.getLogicGates())
-        {
-            boolean shouldBeTriggered = false;
-
-            // Don't simulate the gate that just triggered a change
-            if (gate == origin)
-            {
-                continue;
-            }
-
-            for (Signal input : gate.getInputs())
-            {
-                if (input.getName().equals(signal.getName()))
-                {
-                    shouldBeTriggered = true;
-                }
-            }
-
-            if (!shouldBeTriggered)
-            {
-                continue;
-            }
-
-            gate.trigger();
-
-            for (Signal output : gate.getOutputs())
-            {
-                UI.debugPrint("--> triggered gate through propagation: " + gate.getClass().getSimpleName() + " for '" + output.getName() + "' -> " + output.getState());
-                simulateUpdatedSignal(gate, output);
-            }
-        }
+        return simulator.simulate();
     }
 
     /**
@@ -454,10 +241,7 @@ public class Interpreter
      */
     public void handleAndArgument(String command, String[] arguments)
     {
-        if (arguments.length != 3)
-        {
-            ErrorHandler.errorInLine("invalid number of arguments for command");
-        }
+        ErrorHandler.assertArgumentCount(3, arguments.length, arguments[0]);
 
         Signal[] inputs = signalManager.getSignalsByName(arguments[1]);
         Signal[] outputs = new Signal[] { signalManager.addSignal(arguments[2], false) };
@@ -475,10 +259,7 @@ public class Interpreter
      */
     public void handleOrArgument(String command, String[] arguments)
     {
-        if (arguments.length != 3)
-        {
-            ErrorHandler.errorInLine("invalid number of arguments for command");
-        }
+        ErrorHandler.assertArgumentCount(3, arguments.length, arguments[0]);
 
         Signal[] inputs = signalManager.getSignalsByName(arguments[1]);
         Signal[] outputs = new Signal[] { signalManager.addSignal(arguments[2], false) };
@@ -496,10 +277,7 @@ public class Interpreter
      */
     public void handleNotArgument(String command, String[] arguments)
     {
-        if (arguments.length != 3)
-        {
-            ErrorHandler.errorInLine("invalid number of arguments for command");
-        }
+        ErrorHandler.assertArgumentCount(3, arguments.length, arguments[0]);
 
         Signal[] inputs = signalManager.getSignalsByName(arguments[1]);
         Signal[] outputs = new Signal[] { signalManager.addSignal(arguments[2], false) };
@@ -517,10 +295,7 @@ public class Interpreter
      */
     public void handleShowArgument(String command, String[] arguments)
     {
-        if (arguments.length != 2)
-        {
-            ErrorHandler.errorInLine("invalid number of arguments for command");
-        }
+        ErrorHandler.assertArgumentCount(2, arguments.length, arguments[0]);
 
         String[] signalNames = arguments[1].split(",");
 
@@ -541,10 +316,7 @@ public class Interpreter
      */
     public void handleNandArgument(String command, String[] arguments)
     {
-        if (arguments.length != 3)
-        {
-            ErrorHandler.errorInLine("invalid number of arguments for command");
-        }
+        ErrorHandler.assertArgumentCount(3, arguments.length, arguments[0]);
 
         Signal[] inputs = signalManager.getSignalsByName(arguments[1]);
         Signal[] outputs = new Signal[] { signalManager.addSignal(arguments[2], false) };
@@ -562,10 +334,7 @@ public class Interpreter
      */
     public void handleXorArgument(String command, String[] arguments)
     {
-        if (arguments.length != 3)
-        {
-            ErrorHandler.errorInLine("invalid number of arguments for command");
-        }
+        ErrorHandler.assertArgumentCount(3, arguments.length, arguments[0]);
 
         Signal[] inputs = signalManager.getSignalsByName(arguments[1]);
         Signal[] outputs = new Signal[] { signalManager.addSignal(arguments[2], false) };
@@ -583,10 +352,7 @@ public class Interpreter
      */
     public void handleSignalArgument(String command, String[] arguments)
     {
-        if (arguments.length != 2)
-        {
-            ErrorHandler.errorInLine("invalid number of arguments for command");
-        }
+        ErrorHandler.assertArgumentCount(2, arguments.length, arguments[0]);
 
         signalManager.addSignal(arguments[1], false);
 
@@ -595,24 +361,18 @@ public class Interpreter
 
     public void handleDefineArgument(String command, String[] arguments)
     {
-        if (arguments.length != 3)
-        {
-            ErrorHandler.errorInLine("invalid number of arguments for command");
-        }
+        ErrorHandler.assertArgumentCount(3, arguments.length, arguments[0]);
 
         // Add an empty logic gate (for now)
         this.currentSubCircuitGate = (SubCircuitGate) gateManager.addLogicGate(GateType.CUSTOM, null, null);
         this.currentSubCircuitGate.setName(arguments[1]);
 
-        UI.debugPrint("defined new subcircuit '" + arguments[1] + "' at command " + this.currentCommandIndex);
+        UI.debugPrint("defined new subcircuit '" + arguments[1] + "'");
     }
 
     public void handleSubCircuitGate(String command, String[] arguments)
     {
-        if (arguments.length != 3)
-        {
-            ErrorHandler.errorInLine("invalid number of arguments for command");
-        }
+        ErrorHandler.assertArgumentCount(3, arguments.length, arguments[0]);
 
         SubCircuitGate subCircuitGate = this.gateManager.getSubCircuitByName(arguments[0]);
 
@@ -622,7 +382,7 @@ public class Interpreter
         subCircuitGate.setInputs(inputs);
         subCircuitGate.setOutputs(outputs);
 
-        UI.debugPrint("defined new inputs and outputs for subcircuit '" + arguments[1] + "' at command " + this.currentCommandIndex);
+        UI.debugPrint("defined new inputs and outputs for subcircuit '" + arguments[1] + "'");
     }
 
     public void recordToSubCircuit(String command)
