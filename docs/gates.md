@@ -20,6 +20,7 @@
   - [NAND](#nand)
   - [OR](#or)
   - [XOR](#xor)
+  - [NOR](#nor)
 
 <br>
 
@@ -188,4 +189,19 @@ Will be `true` the amount of inputs that are `true` is uneven.
 |0|0|0|
 |0|1|1|
 |1|0|1|
+|1|1|0|
+
+### NOR
+
+```
+nor <VARIABLE, ...> = <OUTPUT>
+```
+
+Will be `true` if all input variables are `false`.
+
+|a|b|output|
+|---|---|---|
+|0|0|1|
+|0|1|0|
+|1|0|0|
 |1|1|0|

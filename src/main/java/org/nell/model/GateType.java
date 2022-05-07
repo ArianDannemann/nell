@@ -7,5 +7,6 @@ public enum GateType
     NOT,
     NAND,
     XOR,
-    CUSTOM
+    CUSTOM,
+    NOR
 }

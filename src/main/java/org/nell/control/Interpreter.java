@@ -150,6 +150,10 @@ public class Interpreter
                     handleDefineArgument(command, arguments);
                     break;
 
+                case "nor":
+                    handleNorArgument(command, arguments);
+                    break;
+
                 case "}":
                     break;
 
@@ -383,6 +387,24 @@ public class Interpreter
         subCircuitGate.setOutputs(outputs);
 
         UI.debugPrint("defined new inputs and outputs for subcircuit '" + arguments[1] + "'");
+    }
+
+    /**
+     *
+     * FORM: and <SIGNAL,...> <SIGNAL>
+     *
+     * @param command
+     * @param arguments
+     */
+    public void handleNorArgument(String command, String[] arguments)
+    {
+        ErrorHandler.assertArgumentCount(3, arguments.length, arguments[0]);
+
+        Signal[] inputs = signalManager.getSignalsByName(arguments[1]);
+        Signal[] outputs = new Signal[] { signalManager.addSignal(arguments[2], false) };
+        gateManager.addLogicGate(GateType.NOR, inputs, outputs);
+
+        UI.debugPrint("added NOR gate with inputs " + arguments[1] + " and outputs " + arguments[2]);
     }
 
     public void recordToSubCircuit(String command)

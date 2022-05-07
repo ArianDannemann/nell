@@ -1,0 +1,8 @@
+# demonstration of the nor gate
+
+input a
+input b
+
+nor a,b = NOR
+
+show NOR

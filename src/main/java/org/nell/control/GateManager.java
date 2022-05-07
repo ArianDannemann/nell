@@ -3,12 +3,7 @@ package org.nell.control;
 import org.nell.model.GateType;
 import org.nell.model.LogicGate;
 import org.nell.model.Signal;
-import org.nell.model.logicgates.AndGate;
-import org.nell.model.logicgates.NandGate;
-import org.nell.model.logicgates.NotGate;
-import org.nell.model.logicgates.OrGate;
-import org.nell.model.logicgates.SubCircuitGate;
-import org.nell.model.logicgates.XorGate;
+import org.nell.model.logicgates.*;
 
 public class GateManager
 {
@@ -52,6 +47,9 @@ public class GateManager
 
             case CUSTOM:
                 return addLogicGate(new SubCircuitGate(inputs, outputs));
+
+            case NOR:
+                 return addLogicGate(new NorGate(inputs, outputs));
 
             default:
                 return null;

@@ -106,7 +106,8 @@ public class UI
         UI.print("--------");
         for (Signal output : firstResult.getOutputSignals())
         {
-            UI.print("|---------------");
+            if (output.getState() == true || output.getState() == false)
+                UI.print("|---------------");
         }
         UI.print("\n");
 

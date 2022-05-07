@@ -16,7 +16,7 @@ public class App
     {
         Interpreter interpreter = new Interpreter();
 
-        //args = new String[] { ".\\examples\\all_gates.nell" };
+        //args = new String[] { ".\\examples\\NOR.nell" };
 
         UI.clearLog();
         handleArguments(args);
